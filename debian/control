@@ -1,0 +1,12 @@
+Source: ros-hydro-dynamixel-pro-moveit-controller
+Section: misc
+Priority: extra
+Maintainer: Brian Axelrod <baxelrod@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin, ros-hydro-dynamixel-pro-controller, ros-hydro-moveit-core, ros-hydro-roscpp, ros-hydro-sensor-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-hydro-dynamixel-pro-moveit-controller
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-dynamixel-pro-controller, ros-hydro-moveit-core, ros-hydro-roscpp, ros-hydro-sensor-msgs
+Description: The dynamixel_pro_moveit_controller package, it interprets joint trajectories and uses the low level drivers to directly control the arm. Avoiding the extra layer of translating the joint_trajectory messages to joint_state messages
