@@ -1,0 +1,14 @@
+<!-- First the name of the .so file that is generated minus the .so extension -->
+
+<library path="libdynamixel_pro_moveit_controller">
+
+  <!-- The name does not matter, its use is deprecated, and in fact putting a name is optional -->
+  <!-- Type = namespace::class, base_class_type = base_ns::base_class -->
+  <class name="dynamixel_pro_moveit_controller_manager_plugin/DynamixelProMoveitControllerManager"
+      type="DynamixelProMoveIt::DynamixelProMoveItControllerManager"
+      base_class_type="moveit_controller_manager::MoveItControllerManager">
+      <description>
+         This plugin helps us control dynamixel pro arms.
+      </description>
+  
+</library>
